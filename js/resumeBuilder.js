@@ -3,16 +3,16 @@ var bio = {
 	"role" : "Web Developer",
 	"welcomeMsg" : "Hey yo!",
 	"contacts" : {
-		"mobile": "412-956-1697",
-		"email": "timmy_hall@icloud.com",
+		"mobile": "555-555-1234",
+		"email": "bananas@gmail.com",
 		"github": "timmyhall",
 		"twitter": "@tphall9",
 		"location": "Peoria, IL, USA"
 	},
 	"skills" : [ "math", "biking", "drawing"
 	],
-	"bioPic" : "images/TimmyHall.jpg"
-}
+	"bioPic" : "images/biopic.jpg"
+};
 
 var work = {
 	"jobs": [
@@ -26,7 +26,7 @@ var work = {
 		{
 			"employer": "Herlev Eagles",
 			"title": "Professional Athlete",
-			"location": "Herlev, Denmark",
+			"location": "Copenhagen, Denmark",
 			"dates": "2014-2015",
 			"description": "Hockey Player in The Metal Ligaen, Denmark's top professional league."
 		},
@@ -38,7 +38,7 @@ var work = {
 			"description": "Hockey Player for the Chicago Blackhawks 'A' Farm Club in the Southern Professional Hockey League."
 		}
 	]
-}
+};
 
 var education = {
 	"schools": [
@@ -65,7 +65,7 @@ var education = {
 			"url": "https://www.udacity.com"
 		}	
 	]
-}
+};
 
 var projects = {
 	"projects": [
@@ -82,33 +82,33 @@ var projects = {
 			"image": "images/portfolioproject.png"
 		}
 	]
-}
+};
 
-var formattedName = HTMLheaderName.replace("%data%", bio["name"]);
+var formattedName = HTMLheaderName.replace("%data%", bio.name);
 $("#header").append(formattedName);
 
-var formattedRole = HTMLheaderRole.replace("%data%", bio["role"]);
+var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
 $("#header").append(formattedRole);
 
-var formattedMobile = HTMLmobile.replace("%data%", bio.contacts["mobile"]);
+var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
 $("#header").append(formattedMobile);
 
-var formattedEmail = HTMLemail.replace("%data%", bio.contacts["email"]);
+var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
 $("#header").append(formattedEmail);
 
-var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts["twitter"]);
+var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
 $("#header").append(formattedTwitter);
 
-var formattedGithub = HTMLgithub.replace("%data%", bio.contacts["github"]);
+var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
 $("#header").append(formattedGithub);
 
-var formattedLocation = HTMLlocation.replace("%data%", bio.contacts["location"]);
+var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
 $("#header").append(formattedLocation);
 
-var formattedbioPic = HTMLbioPic.replace("%data%", bio["bioPic"]);
+var formattedbioPic = HTMLbioPic.replace("%data%", bio.bioPic);
 $("#header").append(formattedbioPic);
 
-var formattedwelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio["welcomeMsg"]);
+var formattedwelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMsg);
 $("#header").append(formattedwelcomeMsg);
 
 if (bio.skills.length > 0) {
@@ -123,7 +123,7 @@ if (bio.skills.length > 0) {
 
 	var formattedSkill = HTMLskills.replace("%data%", bio.skills[2]);
 	$("#skills").append(formattedSkill);
-};
+}
 
 function displayWork() {
 	for (job in work.jobs) {
@@ -190,7 +190,11 @@ function displayEducation() {
 		var formattedschoolMajor = HTMLschoolMajor.replace("%data%", education.schools[school].major);
 		$(".education-entry:last").append(formattedschoolMajor);
 	}
+}
 
+displayEducation();
+
+function displayOnline() {
 	for (onlinecourse in education.onlinecourses) {
 
 		$("#education").append(HTMLonlineClasses);
@@ -208,7 +212,7 @@ function displayEducation() {
 	}
 }
 
-displayEducation();
+displayOnline();
 
 //function locationizer(work_obj) {
 	//var locationArray= [];
@@ -231,6 +235,22 @@ function inName(name) {
 	return name[0] +" "+ name[1];
 }
 
-$("#main").append(internationalizeButton);
+//$("#main").append(internationalizeButton);
 
 $("#mapDiv").append(googleMap);
+
+clickLocations = [];
+
+function logClicks(x,y) {
+  clickLocations.push(
+    {
+      x: x,
+      y: y
+    }
+  );
+  console.log('x location: ' + x + '; y location: ' + y);
+}
+
+$(document).click(function(loc) {
+ 
+});
