@@ -254,3 +254,13 @@ function logClicks(x,y) {
 $(document).click(function(loc) {
  
 });
+
+$("#lets-connect").append(formattedMobile);
+
+$("#lets-connect").append(formattedEmail);
+
+$("#lets-connect").append(formattedGithub);
+
+$("#lets-connect").append(formattedTwitter);
+
+$("#lets-connect").append(formattedLocation);
