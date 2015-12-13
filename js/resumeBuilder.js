@@ -166,10 +166,14 @@ education.display = function() {
 
         var formattedschoolMajor = HTMLschoolMajor.replace("%data%", education.schools[school].majors);
 
-        $(".education-entry:last").append(formattedNameDegree,formattedschoolDates,formattedschoolLocation,formattedschoolMajor,HTMLonlineClasses);
+        $(".education-entry:last").append(formattedNameDegree,formattedschoolDates,formattedschoolLocation,formattedschoolMajor);
     }
 
+        $("#education").append(HTMLonlineClasses);
+
     for (var onlinecourse in education.onlineCourses) {
+
+        $("#education").append(HTMLschoolStart);
 
         var formattedonlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[onlinecourse].title);
         var formattedonlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[onlinecourse].school);
