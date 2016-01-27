@@ -96,6 +96,9 @@ bio.display = function() {
     $("#header").append(formattedName,formattedRole,formattedMobile,formattedEmail,formattedTwitter,formattedGithub,formattedLocation,formattedbioPic,formattedwelcomeMsg);
     $("#footerContacts").append(formattedMobile,formattedEmail,formattedTwitter,formattedGithub,formattedLocation);
 
+/*
+
+*/
     if (bio.skills.length) {
 
         $("#header").append(HTMLskillsStart);
