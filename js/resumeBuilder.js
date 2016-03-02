@@ -5,23 +5,23 @@ var bio = {
     role: 'Web Developer',
     welcomeMessage: 'Hey yo!',
     contacts: {
-        mobile: '555-555-1234',
-        email: 'bananas@gmail.com',
+        mobile: '412-956-1697',
+        email: 'timmy_hall@icloud.com',
         github: 'timmyhall',
         twitter: '@tphall9',
         location: 'Pittsburgh, PA, USA'
     },
-    skills: ['math', 'biking', 'drawing'],
+    skills: ['Python', 'Java', 'JavaScript', 'jQuery', 'Bootstrap', 'Grunt', 'Git/Github'],
     biopic: 'images/biopic.jpg'
 };
 
 var work = {
     jobs: [{
-        employer: 'Alaska Aces',
+        employer: 'Wheeling Nailers',
         title: 'Professional Athlete',
-        location: 'Anchorage, AK, USA',
-        dates: '2012-2013',
-        description: 'Hockey player for the St. Louis Blues "AA" Farm Club in the East Coast Hockey League.'
+        location: 'Wheeling, WV, USA',
+        dates: '2015-Present',
+        description: 'Hockey Player for the Pittsburgh Penguins "AA" Farm Club in the East Coast Hockey League.'
     }, {
         employer: 'Herlev Eagles',
         title: 'Professional Athlete',
@@ -29,11 +29,11 @@ var work = {
         dates: '2014-2015',
         description: 'Hockey Player in The Metal Ligaen, the top professional league in Denmark.'
     }, {
-        employer: 'Indy Fuel',
+        employer: 'Alaska Aces',
         title: 'Professional Athlete',
-        location: 'Indianapolis, IL, USA',
-        dates: '2015-Present',
-        description: 'Hockey Player for the Chicago Blackhawks "AA" Farm Club in the Southern Professional Hockey League.'
+        location: 'Anchorage, AK, USA',
+        dates: '2012-2013',
+        description: 'Hockey player for the St. Louis Blues "AA" Farm Club in the East Coast Hockey League.'
     }]
 };
 
@@ -47,29 +47,34 @@ var education = {
         url: 'https://www.coloradocollege.edu'
     }],
     onlineCourses: [{
+        title: 'Front-End Web Development',
+        school: 'Udacity',
+        dates: '2015-Present',
+        url: 'https://www.udacity.com'
+    }, {
         title: 'Office Productivity',
         school: 'Community College of Allegheny County',
         dates: 2015,
         url: 'https://www.ccac.edu'
-    }, {
-        title: 'Front-End Web Development',
-        school: 'Udacity',
-        dates: 2015,
-        url: 'https://www.udacity.com'
     }]
 };
 
 var projects = {
     projects: [{
-        title: 'About Me',
-        dates: 'October 2015',
-        description: 'Created and edited HTML, CSS, and JS files to create my very first webpage.',
-        images: ['images/aboutme.png']
+        title: 'Classic Arcade Game Frogger',
+        dates: 'January 2016',
+        description: 'Created a HTML5 Canvas powered video game using the best practices in Object Oriented Javascript.',
+        images: ['images/frogger.png']
     }, {
         title: 'Build a Portfolio Site',
         dates: 'November 2015',
         description: 'Developed a responsive website with images, descriptions, and links to all of my Front-End Web Development projects.',
         images: ['images/portfolioproject.png']
+    }, {
+        title: 'About Me',
+        dates: 'October 2015',
+        description: 'Created and edited HTML, CSS, and JS files to create my very first webpage.',
+        images: ['images/aboutme.png']
     }]
 };
 
@@ -108,6 +113,14 @@ bio.display = function() {
         var formattedSkill = HTMLskills.replace("%data%", bio.skills[1]);
         $("#skills").append(formattedSkill);
         var formattedSkill = HTMLskills.replace("%data%", bio.skills[2]);
+        $("#skills").append(formattedSkill);
+        var formattedSkill = HTMLskills.replace("%data%", bio.skills[3]);
+        $("#skills").append(formattedSkill);
+        var formattedSkill = HTMLskills.replace("%data%", bio.skills[4]);
+        $("#skills").append(formattedSkill);
+        var formattedSkill = HTMLskills.replace("%data%", bio.skills[5]);
+        $("#skills").append(formattedSkill);
+        var formattedSkill = HTMLskills.replace("%data%", bio.skills[6]);
         $("#skills").append(formattedSkill);
     }
 };
