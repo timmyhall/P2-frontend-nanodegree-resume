@@ -20,7 +20,7 @@ var work = {
         employer: 'Wheeling Nailers',
         title: 'Professional Athlete',
         location: 'Wheeling, WV, USA',
-        dates: '2015-Present',
+        dates: '2015-2016',
         description: 'Hockey Player for the Pittsburgh Penguins "AA" Farm Club in the East Coast Hockey League.'
     }, {
         employer: 'Herlev Eagles',
