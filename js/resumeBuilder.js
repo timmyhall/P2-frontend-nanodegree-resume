@@ -162,7 +162,7 @@ projects.display = function() {
         var formattedprojectImage = HTMLprojectImage.replace("%data%", projects.projects[project].images);
         $(".project-entry:last").append(formattedprojectTitle,formattedprojectDates,formattedprojectDescription,formattedprojectImage);
     }
-};
+}
 
 projects.display();
 
@@ -205,4 +205,5 @@ education.display = function() {
 
 education.display();
 
+// Append map for work locations
 $("#mapDiv").append(googleMap);
