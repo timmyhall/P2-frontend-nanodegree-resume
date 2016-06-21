@@ -2,8 +2,8 @@
 
 var bio = {
     name: 'Timmy Hall',
-    role: 'Web Developer',
-    welcomeMessage: 'Hey yo!',
+    role: 'Research Analyst',
+    welcomeMessage: '',
     contacts: {
         mobile: '412-956-1697',
         email: 'timmy_hall@icloud.com',
@@ -11,7 +11,7 @@ var bio = {
         twitter: '@tphall9',
         location: 'Pittsburgh, PA, USA'
     },
-    skills: ['Python', 'Java', 'JavaScript', 'jQuery', 'Bootstrap', 'Grunt', 'Git/Github'],
+    skills: ['Python', 'Java', 'JavaScript', 'jQuery', 'Knockout', 'Bootstrap', 'Grunt', 'Git/Github'],
     biopic: 'images/biopic.jpg'
 };
 
@@ -61,6 +61,11 @@ var education = {
 
 var projects = {
     projects: [{
+        title: 'Neighborhood Map',
+        dates: 'April 2016',
+        description: 'Developed a single page application featuring a map and information from the Foursquare API of my favorite breweries in Pittsburgh.',
+        images: ['images/brewery.png']
+    }, {
         title: 'Classic Arcade Game Frogger',
         dates: 'January 2016',
         description: 'Created a HTML5 Canvas powered video game using the best practices in Object Oriented Javascript.',
@@ -121,6 +126,8 @@ bio.display = function() {
         var formattedSkill = HTMLskills.replace("%data%", bio.skills[5]);
         $("#skills").append(formattedSkill);
         var formattedSkill = HTMLskills.replace("%data%", bio.skills[6]);
+        $("#skills").append(formattedSkill);
+        var formattedSkill = HTMLskills.replace("%data%", bio.skills[7]);
         $("#skills").append(formattedSkill);
     }
 };
