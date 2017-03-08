@@ -2,7 +2,7 @@
 
 var bio = {
     name: 'Timmy Hall',
-    role: 'Pit Crew Performer',
+    role: 'Pit Crew',
     welcomeMessage: '',
     contacts: {
         email: 'thall@hmsracing.com',
