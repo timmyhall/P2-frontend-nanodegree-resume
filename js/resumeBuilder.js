@@ -106,8 +106,8 @@ bio.display = function() {
 
     var formattedwelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
 
-    $("#header").append(formattedName,formattedRole,formattedMobile,formattedEmail,formattedTwitter,formattedGithub,formattedLocation,formattedbioPic,formattedwelcomeMsg);
-    $("#footerContacts").append(formattedMobile,formattedEmail,formattedTwitter,formattedGithub,formattedLocation);
+    $("#header").append(formattedName,formattedRole,formattedEmail,formattedTwitter,formattedGithub,formattedLocation,formattedbioPic,formattedwelcomeMsg);
+    $("#footerContacts").append(formattedEmail,formattedTwitter,formattedGithub,formattedLocation);
 
 /*
 
