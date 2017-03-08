@@ -94,8 +94,6 @@ bio.display = function() {
 
     var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
 
-    var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
-
     var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
 
     var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
