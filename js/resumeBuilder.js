@@ -2,14 +2,13 @@
 
 var bio = {
     name: 'Timmy Hall',
-    role: 'Research Analyst',
+    role: 'Pit Crew Performer',
     welcomeMessage: '',
     contacts: {
-        mobile: '412-956-1697',
-        email: 'timmy_hall@icloud.com',
+        email: 'thall@hmsracing.com',
         github: 'timmyhall',
         twitter: '@tphall9',
-        location: 'Pittsburgh, PA, USA'
+        location: 'Charlotte, NC, USA'
     },
     skills: ['Python', 'Java', 'JavaScript', 'jQuery', 'Knockout', 'Bootstrap', 'Grunt', 'Git/Github'],
     biopic: 'images/biopic.jpg'
@@ -17,6 +16,12 @@ var bio = {
 
 var work = {
     jobs: [{
+        employer: 'Hendrick Motorsports',
+        title: 'Professional Athlete',
+        location: 'Charlotte, NC, USA',
+        dates: '2016-Present',
+        description: 'Tire Changer for the Hendrick Motorsports Developmental Pit Crew'
+    }, {
         employer: 'Wheeling Nailers',
         title: 'Professional Athlete',
         location: 'Wheeling, WV, USA',
@@ -49,7 +54,7 @@ var education = {
     onlineCourses: [{
         title: 'Front-End Web Development',
         school: 'Udacity',
-        dates: '2015-Present',
+        dates: 2016,
         url: 'https://www.udacity.com'
     }, {
         title: 'Office Productivity',
